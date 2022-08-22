@@ -1,0 +1,180 @@
+:root{
+    --deal-introducao-bg: black;
+    --deal-introducao-txt: #F25AFE;
+    --deal-carousel-bg: #F25AFE;
+    --deal-topics-bg: #F25AFE;
+}
+nav a:hover{
+    color: #F25AFE !important;
+}
+section{
+    margin-bottom: 20px;
+}
+.deal-topicos{
+    background-color: var(--deal-topics-bg);
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.deal-topicos img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#deal-introducao{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    
+}
+#deal-introducao h2{
+    position: absolute;
+    font-size: 50px;
+    color: var(--deal-introducao-txt);
+    z-index: 1;
+}
+#deal-introducao img{
+    width: 100%;
+    filter: brightness(80%);
+    z-index: 0;
+    height: 750px;
+    
+}
+#carouselExampleInterval{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    height: 100px;
+    background-color: var(--deal-carousel-bg);
+    font-size: 25px;
+    font-weight: 700 !important; 
+    border: 4px solid black;
+}
+#carouselExampleInterval p{
+    justify-self: center;
+}
+.container{
+    margin: 40px 0;
+}
+#deal-tipos-servico{
+    margin: 5px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.deal-servicos-card img{
+    width: 55px;
+    height: 50px;
+}
+
+.deal-servicos-card{
+    max-width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.deal-card-servicos-mais-solicitados{
+    text-align: center;
+    background-color: #F25AFE;
+}
+.card-img-top{
+    height: 220px;
+}
+
+.card-body-service{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 23px !important;
+    height: 300px !important;
+    padding: 3px 20px;
+}
+
+.card-body-service a{
+    margin-top: 120px;
+}
+.card-service-content{
+    display: inline
+}
+.card-service-content p{
+    display: flex;
+    display: inline;
+}
+.inline{
+    display: flex;
+}
+
+.form-submit{
+    background-color: black !important;
+    border: black !important;
+}
+
+.form-submit:hover{
+    background-color: #F25AFE !important;
+    border: #F25AFE !important;
+}
+
+.cards-servicos{
+    border: 2px solid black !important;
+    border-radius: 5px;
+    display: flex;
+}
+.cards-servicos .card-header{
+    background-color: #F25AFE !important;
+}
+.cards-servicos .card-body{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke !important;
+} 
+
+.cards-servicos a{
+    background-color: black !important;
+    border: black !important;
+    transition: 0.2s;
+}
+
+.cards-servicos a:hover{
+    background-color:  #F25AFE!important;
+    color: black;
+}
+
+.contato-dev{
+    padding-left: 20px;
+}
+.contato-dev a, a:hover{
+    font-size: 20px ;
+    text-decoration: unset !important;
+    margin-right: 10px;
+    animation: 2s;
+}
+
+.contato-dev a{
+    color: white;
+}
+.contato-dev a:hover{
+    color: black;
+}
+
+.card-body-footer{
+    background-color: #F25AFE;
+}
+.card-body-footer img{  
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.card-body-footer b{
+    font-size: 30px;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,151 @@
+<div class="deal-topicos">
+    <img src="img/services.svg"><h1>Cadastrar Serviços</h1>
+</div>
+<form action="cadastroServico" method="post" class="container">
+    <div class="mb-3">
+        <label for="txtLocalidade" class="form-label">Localidade</label>
+        <input type="text" class="form-control" id="txtLocalidade" name="localidade" required>
+    </div>
+    <div class="mb-3">
+        <label for="txtCategoria" class="form-label" >Categoria</label>
+        <select class="form-select" name="categoria" id="categoriaServiço" onchange="teste(this);" required>
+            <option selected>--</option>
+            <option name="eletrica">Elétrica</option>
+            <option name="hidraulica">Hidráulica</option>
+            <option name="carreto">Carreto</option>
+            <option name="mecanica">Mecânica</option>
+            <option name="marcenaria">Marcenaria</option>
+            <option name="pintura">Pintura</option>
+            <option name="manutencao_computador">Manutenção Computador</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="txtServico" class="form-label" >Descreva o serviço de forma breve</label>
+        <input type="text" class="form-control" id="txtServico" name="servico" required>
+    </div>
+    <div id="prestadores">
+        <div class="row">
+            <div id="Elétrica" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (1).jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:aliceblue">João da Silva</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (6).PNG"></li>
+                            <li class="list-group-item">Elogios Frequentes: Trabalha rápido</li>
+                            <li class="list-group-item">Habilidades: <span class="habilidade">Elétrica</span></li>
+                        </ul>
+                        <div class="card-body"></div>
+                    </div>
+                </div>    
+            </div>   
+            <div id="Hidráulica" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (6).jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:aliceblue">Mario Teles</h5>
+                                <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (6).PNG"></li>                         
+                                <li class="list-group-item">Elogios Frequentes: Bom acabamento</li>
+                                <li class="list-group-item">Habilidades: <span class="habilidade">Hidráulica</span></li>
+                            </ul>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="Mecânica" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (3).jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:aliceblue">Jailson Mendes</h5>
+                                <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (1).PNG"></li>
+                                <li class="list-group-item">Elogios Frequentes: Boa comunicação</li>
+                                <li class="list-group-item">Habilidades: <span class="habilidade">Mecânica</span></li>
+                            </ul>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Carreto" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (4).jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:aliceblue">Reinaldo Almeida</h5>
+                                <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (2).PNG"></li>
+                                <li class="list-group-item">Elogios Frequentes: Bem equipado</li>
+                                <li class="list-group-item">Habilidades: <span class="habilidade">Carreto</span></li>
+                            </ul>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Pintura" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (5).jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:aliceblue">Joana Mendonça</h5>
+                                <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (6).PNG"></li>
+                                <li class="list-group-item">Elogios Frequentes: Trabalha bem</li>
+                                <li class="list-group-item">Habilidades: <span class="habilidade">Pintura</span></li>
+                            </ul>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Marcenaria" style="display: none">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/trabalhador (2).jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:aliceblue">Adriano Gonçalves</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Avaliação:<img class="avaliação" src="img/estrelas (1).PNG"></li>
+                            <li class="list-group-item">Elogios Frequentes: Pontualidade</li>
+                            <li class="list-group-item">Habilidades: <span class="habilidade">Marcenaria</span></li>
+                        </ul>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div> 
+    </div>
+    <div class="mb-3">
+        <label for="selectPrestador" class="form-label" >Selecione o prestador</label>
+        <select class="form-select" name="prestador" id="prestador" required onchange="habilitarBotão(this)">
+            <option selected>--</option>
+            <option name="João da Silva" id="1" hidden>João da Silva</option>
+            <option name="Mario Teles" id="2" hidden>Mario Teles</option>
+            <option name="Jailson Mendes" id="3" hidden>Jailson Mendes</option>
+            <option name="Reinaldo Almeida" id="4" hidden>Reinaldo Almeida</option>
+            <option name="Joana Mendonça" id="5" hidden>Joana Mendonça</option>
+            <option name="Adriano Gonçalves" id="6" hidden>Adriano Gonçalves</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary form-submit" id="btnSubmit" onclick="cadastroServico('txtLocalidade', txtServico)" disabled>Cadastrar Serviço</button>
+    
+</form>
